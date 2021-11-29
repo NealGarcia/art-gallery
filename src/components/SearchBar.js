@@ -3,7 +3,7 @@ import React from 'react';
 function SearchBar(props) {
     return (
         <div className = "sideBar">
-            <h1>React Art Gallery</h1>
+            <div id = "titleWrap"><h1 id = "title">React Art Gallery</h1></div>
             <form className = "searchForm">
                 <input placeholder = "Search"
                        type = "text"

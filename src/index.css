@@ -7,7 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#title{
+  float: left;
+  position: relative;
+  color: white;
+  left: 15%;
 }
+
+.titleWrap{
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+
+.sideBar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1; /*element stays on top*/
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+
