@@ -1,9 +1,12 @@
 import './App.css';
+import SearchBar from './components/SearchBar'
+import Results from './components/Results'
 
 function App() {
   return (
     <div className="App">
-      <h1>React Art Gallery</h1>
+      <SearchBar />
+      <Results />
     </div>
   );
 }
