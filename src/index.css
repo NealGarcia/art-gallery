@@ -50,5 +50,6 @@ img {
   max-width: 2000px;
   margin-top: 20px;
   margin-left: 275px;
+  margin-right: 20px;
   column-count: 4;
 }
