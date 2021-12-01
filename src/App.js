@@ -1,5 +1,7 @@
 import SearchBar from './components/SearchBar'
 import Results from './components/Results'
+import { Route, Link } from "react-router-dom";
+import Description from './components/Description';
 
 function App() {
 
@@ -77,6 +79,7 @@ function App() {
     <div className="App">
       <SearchBar/>
       <Results images = {images}/>
+      <Route path ="/description" component = {Description} />
     </div>
   );
 }
