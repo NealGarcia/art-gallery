@@ -32,11 +32,10 @@ body {
 }
 
 img {
-  width: 250px;
+  width: 100%;
 }
 .imageContainer{
-  max-width: 1000px;
+  max-width: 2000px;
   margin-left: 275px;
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 4;
 }
