@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
+import { isDOMComponent } from 'react-dom/test-utils';
 
-function Results() {
+function Results({images}) {
     const [result, setResult] = useState([]);
 
     useEffect(() => {
@@ -15,7 +16,15 @@ function Results() {
 
     return (
         <div>
-            Results
+            <div className = "imageContainer">
+                {images.map(image => (
+                    <div key = {image.id} className = "image">
+                        <img src = {image.url} alt = "artwork"/>
+                    </div>
+                ))}
+
+
+            </div>
         </div>
     );
 }

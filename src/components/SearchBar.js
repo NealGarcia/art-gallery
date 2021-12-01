@@ -27,11 +27,8 @@ function SearchBar(props) {
                     <option value = "country">Country of Origin</option>
                 </select>
                 <button type = "submit">Search</button>
-
-
-
-
             </form>
+            <button type = "button"> Random Artwork </button>
         </div>
     );
 }
