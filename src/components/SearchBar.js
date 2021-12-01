@@ -9,6 +9,7 @@ function SearchBar(props) {
 
     function handleSubmit(event){
         event.preventDefault();
+        console.log(search) // console log the input
     }
 
     return (
