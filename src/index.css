@@ -11,7 +11,11 @@ body {
   float: left;
   position: relative;
   color: black;
-  left: 20%
+  left: 45px;
+  font-weight: lighter;
+  padding: 20px;
+  border: 1px solid black;
+
 }
 
 .titleWrap{
@@ -23,19 +27,22 @@ body {
 
 .sideBar {
   height: 100%;
+  border-right: 1px solid black;
   width: 250px;
   position: fixed;
   z-index: 1; /*element stays on top*/
   top: 0;
   left: 0;
-  background-color: lightgrey;
+  background-color: white;
 }
 
 img {
   width: 100%;
+  margin-bottom: 15px;
 }
 .imageContainer{
   max-width: 2000px;
+  margin-top: 20px;
   margin-left: 275px;
   column-count: 4;
 }

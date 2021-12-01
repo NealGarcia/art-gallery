@@ -14,7 +14,7 @@ function SearchBar(props) {
 
     return (
         <div className = "sideBar">
-            <div id = "titleWrap"><h1 id = "title">React Art Gallery</h1></div>
+            <div id = "titleWrap"><h1 id = "title">React Art <br/>Gallery</h1></div>
             <form className = "searchForm" onSubmit = {handleSubmit}>
                 <input placeholder = "Search"
                        type = "text"
