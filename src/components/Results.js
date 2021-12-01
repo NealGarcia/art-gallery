@@ -6,7 +6,7 @@ function Results() {
     useEffect(() => {
         fetch('https://api.artic.edu/api/v1/artworks')
         .then(res => res.json())
-        .then(json => {
+        .then(json => { 
             setResult(json)
             console.log(json)
         })

@@ -1,12 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function SearchBar(props) {
+    const [search, setSearch] = useState('')
+
+    function handleChange(event){
+        setSearch(event.target.value)
+    }
+
+    function handleSubmit(event){
+        event.preventDefault();
+    }
+
     return (
         <div className = "sideBar">
             <div id = "titleWrap"><h1 id = "title">React Art Gallery</h1></div>
-            <form className = "searchForm">
+            <form className = "searchForm" onSubmit = {handleSubmit}>
                 <input placeholder = "Search"
                        type = "text"
+                       onChange = {handleChange}
                        required />
                 <select name = "options" id = "options">
                     <option value = "name">Name</option>

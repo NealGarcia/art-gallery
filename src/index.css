@@ -10,7 +10,7 @@ body {
 #title{
   float: left;
   position: relative;
-  color: white;
+  color: black;
   left: 20%
 }
 
@@ -28,7 +28,7 @@ body {
   z-index: 1; /*element stays on top*/
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: lightgrey;
 }
 
 

@@ -2,9 +2,11 @@ import SearchBar from './components/SearchBar'
 import Results from './components/Results'
 
 function App() {
+  // const searchOptions = {
+  //   Name: " "}
   return (
     <div className="App">
-      <SearchBar />
+      <SearchBar/>
       <Results />
     </div>
   );
