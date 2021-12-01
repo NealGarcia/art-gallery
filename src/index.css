@@ -31,4 +31,12 @@ body {
   background-color: lightgrey;
 }
 
-
+img {
+  width: 250px;
+}
+.imageContainer{
+  max-width: 1000px;
+  margin-left: 275px;
+  display: flex;
+  flex-wrap: wrap;
+}
