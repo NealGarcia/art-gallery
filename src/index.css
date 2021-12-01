@@ -24,7 +24,6 @@ body {
   left: 50%;
 }
 
-
 .sideBar {
   height: 100%;
   border-right: 1px solid black;
@@ -33,7 +32,14 @@ body {
   z-index: 1; /*element stays on top*/
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #f7f7f7;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%
 }
 
 img {
