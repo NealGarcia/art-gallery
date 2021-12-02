@@ -78,7 +78,8 @@ function App() {
   const [search, setSearch] = useState("cat")
 
   function getImages(result){
-    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}`
+    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id`
+    console.log(url)
     fetch(url)
     .then(response => response.json())
     .then(response => { 

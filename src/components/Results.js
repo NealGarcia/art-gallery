@@ -7,9 +7,12 @@ function Results({ data }) {
         <div>
             <div className = "imageContainer">
                 {data.map(data => (
+                
+
                     <Link to = {`/description/${data.id}`} key = {data.id} className = "image">
-                        <img src = {data.api_link} alt = "artwork"/>
-                        <p>{data.api_link}</p>
+                        <img src = {`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} alt = {data.title}></img>
+
+                        {/* <img src = {data.api_link} alt = "artwork"/> */}
                     </Link>
                 ))}
 
