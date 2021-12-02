@@ -1,27 +1,18 @@
 import React, { useState, useEffect} from 'react';
 import { isDOMComponent } from 'react-dom/test-utils';
+import { Link } from 'react-router-dom'
 
-function Results({images}) {
-    const [result, setResult] = useState([]);
-
-    useEffect(() => {
-        fetch('https://api.artic.edu/api/v1/artworks')
-        .then(res => res.json())
-        .then(json => { 
-            setResult(json)
-            console.log(json)
-        })
-        .catch(console.err)
-    },[])
-
+function Results({ data }) {
     return (
         <div>
             <div className = "imageContainer">
-                {images.map(image => (
-                    <div key = {image.id} className = "image">
-                        <img src = {image.url} alt = "artwork"/>
-                    </div>
+                {data.map(data => (
+                    <Link to = {`/description/${data.id}`} key = {data.id} className = "image">
+                        <img src = {data.api_link} alt = "artwork"/>
+                        <p>{data.api_link}</p>
+                    </Link>
                 ))}
+
 
 
             </div>

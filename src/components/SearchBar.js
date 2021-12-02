@@ -1,20 +1,10 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom'
 
-function SearchBar(props) {
-    const [search, setSearch] = useState('')
-
-    function handleChange(event){
-        setSearch(event.target.value)
-    }
-
-    function handleSubmit(event){
-        event.preventDefault();
-        console.log(search) // console log the input
-    }
-
+function SearchBar({ handleSubmit, handleChange, search }) {
     return (
         <div className = "sideBar">
-            <div id = "titleWrap"><h1 id = "title">React Art <br/>Gallery</h1></div>
+            <Link to = {"/"} id = "titleWrap"><h1 id = "title">React Art <br/>Gallery</h1></Link>
             <form className = "searchForm" onSubmit = {handleSubmit}>
                 <input placeholder = "Search"
                        type = "text"
