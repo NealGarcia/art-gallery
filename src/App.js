@@ -109,10 +109,16 @@ function App() {
         handleSubmit = {handleSubmit}
         search = {search}
       />
-      <Results data = {data}/>
-      <Route path ="/description/:search"
-            component = {Description} 
-            data = {data}/>
+      {/* <Results data = {data}/> */}
+      <Route
+        path="/" 
+        exact component={() => <Results data = {data}/>} 
+      />
+
+      <Route 
+        path ="/description/:search"
+        component = {Description} 
+        data = {data}/>
     </div>
   );
 }
