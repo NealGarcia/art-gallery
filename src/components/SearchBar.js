@@ -19,7 +19,8 @@ function SearchBar({ handleSubmit, handleChange, search }) {
                 <button type = "submit">Search</button>
                 <br/>
                 <button type = "button"> Random Artwork </button>
-
+                
+                
             </form>
         </div>
     );
