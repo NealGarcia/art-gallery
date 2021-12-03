@@ -11,7 +11,9 @@ function Results({ data }) {
                     <Link to = {`/description/${data.id}`} className = "image" >
                         <img 
                         src = {`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} 
-                        alt = {data.title}>
+                        alt = {data.title}
+                        className = "resultImage"
+                        >
                         </img>
                     </Link>
                 ))}

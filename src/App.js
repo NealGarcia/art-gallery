@@ -75,7 +75,7 @@ function App() {
   //   }
   // ];
   const [data, setData] = useState([])
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("modern")
 
   function getImages(result){
     const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id&limit=30`
