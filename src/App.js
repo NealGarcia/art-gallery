@@ -75,10 +75,10 @@ function App() {
   //   }
   // ];
   const [data, setData] = useState([])
-  const [search, setSearch] = useState("cat")
+  const [search, setSearch] = useState("")
 
   function getImages(result){
-    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id`
+    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id&limit=30`
     console.log(url)
     fetch(url)
     .then(response => response.json())
@@ -101,7 +101,7 @@ function App() {
     event.preventDefault();
     getImages(search);
   }
-  
+
   return (
     <div className="App">
       <SearchBar
@@ -110,7 +110,7 @@ function App() {
         search = {search}
       />
       <Results data = {data}/>
-      <Route path ="/description"
+      <Route path ="/description/:search"
             component = {Description} 
             data = {data}/>
     </div>
