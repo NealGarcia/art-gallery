@@ -1,5 +1,3 @@
-import React, { useState, useEffect} from 'react';
-import { isDOMComponent } from 'react-dom/test-utils';
 import { Link } from 'react-router-dom'
 
 function Results({ data }) {
@@ -8,7 +6,7 @@ function Results({ data }) {
         <div>
             <div className = "imageContainer">
                 {data.map(data => (
-                    <Link to = {`/description/${data.id}`} key = {data.id} className = "image" >
+                    <Link to = {`/description/${data.id}`} className = "image" >
                         <img 
                         src = {`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} 
                         alt = {data.title}>
