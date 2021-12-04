@@ -55,7 +55,7 @@ body {
   column-count: 4;
 }
 
-.descriptionContainer{
+.detailsContainer{
   display: flex;
   margin-left: 275px;
   margin-top: 20px;

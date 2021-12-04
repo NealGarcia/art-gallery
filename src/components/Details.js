@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-function Description(props) {
+function Details(props) {
     const [data, setData] = useState([])
     const url = `https://api.artic.edu/api/v1/artworks/${props.match.params.search}`
     console.log(url)
@@ -16,7 +16,7 @@ function Description(props) {
     }, []);
 
     return (
-        <div className = "descriptionContainer">
+        <div className = "detailsContainer">
             {console.log(data)}
             <img 
                 src = {`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} 
@@ -38,4 +38,4 @@ function Description(props) {
     );
 }
 
-export default Description;
+export default Details;

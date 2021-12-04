@@ -1,7 +1,7 @@
 import SearchBar from './components/SearchBar'
 import Results from './components/Results'
 import { Route, Link } from "react-router-dom";
-import Description from './components/Description';
+import Details from './components/Details';
 import React, { useState, useEffect } from 'react';
 
 function App() {
@@ -48,8 +48,8 @@ function App() {
       />
 
       <Route 
-        path ="/description/:search"
-        component = {Description} 
+        path ="/details/:search"
+        component = {Details} 
         data = {data}/>
     </div>
   );
