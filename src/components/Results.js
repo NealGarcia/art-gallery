@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react';
+import React from 'react';
 
 function Results({ data }) {
-    const [isShown, setIsShown] = useState(false);
 
     function mouseHover(event) {
         event.target.style.opacity = 0.75;
