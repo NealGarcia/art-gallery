@@ -2,6 +2,7 @@ import SearchBar from "./components/SearchBar";
 import Results from "./components/Results";
 import { Route, Link } from "react-router-dom";
 import Details from "./components/Details";
+import Home from './components/Home'
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -39,8 +40,9 @@ function App() {
         search={search}
       />
       {/* <Results data = {data}/> */}
-      <Route path="/" exact component={() => <Results data={data} />} />
 
+      <Route path="/home" component={Home} data={data}/>
+      <Route path="/" exact component={() => <Results data={data} />} />
       <Route path="/details/:search" component={Details} data={data} />
     </div>
   );

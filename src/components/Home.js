@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function SearchBar({ handleSubmit, handleChange,}) {
+function Home({ handleSubmit, handleChange,}) {
   return (
     <div className="sideBar">
       <Link to={"/"} id="titleWrap">
@@ -19,9 +19,10 @@ function SearchBar({ handleSubmit, handleChange,}) {
         <br />
         <button type="submit">SEARCH</button>
         <br />
+        <button type="button"> RANDOM ARTWORK</button>
       </form>
     </div>
   );
 }
 
-export default SearchBar;
+export default Home;

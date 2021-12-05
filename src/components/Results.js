@@ -3,14 +3,6 @@ import React from "react";
 
 
 function Results({ data }) {
-  function imgMouseHover(event) {
-    event.target.style.opacity = 0.75;
-  }
-
-  function imgMouseLeave(event) {
-    event.target.style.opacity = 1.0;
-  }
-
   if (!data.length ){
     return <h2 className = "noResults"> No Results Found</h2>
 }
@@ -23,8 +15,6 @@ function Results({ data }) {
           <Link
             to={`/details/${data.id}`}
             className="image"
-            onMouseOver={imgMouseHover}
-            onMouseOut={imgMouseLeave}
             style={{ textDecoration: "none" }}
           >
             <img

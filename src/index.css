@@ -58,6 +58,12 @@ body {
 .resultImage {
   width: 100%;
   margin-bottom: 15px;
+
+}
+
+.resultImage:hover{
+  filter: brightness(70%);
+  /* transition: 0.5s ease; */
 }
 
 .imageContainer{
@@ -155,4 +161,10 @@ input{
   font-size:11px;
   border: black;
   font-family: 'Roboto', sans-serif;
+}
+
+.test{
+  padding-left: 300px;
+  position: relative;
+  color: greenyellow;
 }
