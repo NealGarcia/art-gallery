@@ -1,26 +1,16 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-function Home({ handleSubmit, handleChange,}) {
+function Home({ handleSubmit, handleChange }) {
   return (
-    <div className="sideBar">
-      <Link to={"/"} id="titleWrap">
-        <h1 id="title">
-          React Art <br />
-          Gallery
-        </h1>
-      </Link>
-      <form className="searchForm" onSubmit={handleSubmit}>
-        <input
-          placeholder="Keyword ex: Picasso, Modern"
-          type="text"
-          onChange={handleChange}
-          required
-        />
-        <br />
-        <button type="submit">SEARCH</button>
-        <br />
-        <button type="button"> RANDOM ARTWORK</button>
-      </form>
+    <div className="home">
+                <h1 className = "homeTitle">React Art <br/>Gallery</h1>
+      <div className="homeContainer">
+        <p>Welcome to <span>React Art Gallery.</span></p>
+        <p>
+          Use the search bar to the left to search for to start finding artworks to
+          view.{" "}
+        </p>
+      </div>
     </div>
   );
 }

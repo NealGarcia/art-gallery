@@ -87,6 +87,7 @@ body {
 
 .descriptionImage{
   max-width: 60%;
+
 }
 
 .descriptionText{
@@ -132,6 +133,11 @@ span{
   margin-bottom: 5px;
 }
 
+.artworkStyle{
+  font-weight: 300;
+}
+
+
 button{
   background-color: #f7f7f7; 
   border: 1px solid black;
@@ -163,8 +169,42 @@ input{
   font-family: 'Roboto', sans-serif;
 }
 
-.test{
-  padding-left: 300px;
-  position: relative;
-  color: greenyellow;
+.source{
+  font-size: 11px;
+  text-align:center;
+  color: grey;
+}
+
+.home{
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left: 275px;
+  text-align: center;
+}
+
+.homeContainer p{
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.homeContainer span{
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.homeTitle{
+  width: 130px;
+  margin:auto;
+  text-align: left;
+  color: black;
+  font-weight: 100;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 30px;
 }

@@ -41,7 +41,7 @@ function App() {
       />
       {/* <Results data = {data}/> */}
 
-      <Route path="/home" component={Home} data={data}/>
+      <Route path="/home" component={Home}/>
       <Route path="/" exact component={() => <Results data={data} />} />
       <Route path="/details/:search" component={Details} data={data} />
     </div>
