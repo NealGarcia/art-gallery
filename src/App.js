@@ -10,12 +10,10 @@ function App() {
 
   function getImages(result) {
     const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id&limit=30`;
-    console.log(url);
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
         setData(response.data);
-        console.log(response);
       })
       .catch(console.err);
   }

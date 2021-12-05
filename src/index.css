@@ -87,17 +87,21 @@ body {
 .artistName{
   margin-top: 20px;
   margin-bottom: 5px;
+  white-space: pre-line;
+  font-weight: normal
 }
+
+.artistName::first-line{
+  font-size: 24px;
+  font-weight: bold;
+}
+
 
 .artworkTitle{
   font-style: italic;
   font-size: 28px;
   margin-top: 0px;
   margin-bottom: 5px;
-}
-
-.artworkDetails {
-
 }
 
 .artworkMedium{
@@ -127,4 +131,6 @@ input{
   border: black;
 }
 
-
+.test{
+  white-space: pre-line;
+}
