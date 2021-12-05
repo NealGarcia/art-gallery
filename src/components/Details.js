@@ -34,7 +34,7 @@ function Details(props) {
         <p className="artworkStyle">
           <span>Style:</span> {data.style_title}
         </p>
-        <Link to={"/"} id="titleWrap">
+        <Link to={"/results"} id="titleWrap">
           <button class="returnButton">Back to Search Results</button>
         </Link>
       </div>

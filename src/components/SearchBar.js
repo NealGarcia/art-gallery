@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function SearchBar({ handleSubmit, handleChange,}) {
+function SearchBar({ handleSubmit, handleChange }) {
   return (
     <div className="sideBar">
-      <Link to={"/"} id="titleWrap">
+      <Link to={"/results"} id="titleWrap">
         <h1 id="title">
           React Art <br />
           Gallery
@@ -17,10 +17,12 @@ function SearchBar({ handleSubmit, handleChange,}) {
           required
         />
         <br />
-        
+
         <button type="submit">SEARCH</button>
         <br />
-        <p className = "source">Data and images are sourced from the Art Institute of Chicago API.</p>
+        <p className="source">
+          Data and images are sourced from the Art Institute of Chicago API.
+        </p>
       </form>
     </div>
   );

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:wght@100;300;400&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 
-#title{
+#title {
   float: left;
   position: relative;
   color: black;
@@ -16,13 +16,12 @@ body {
   border: 1px solid black;
 }
 
-#title:hover{
-  background-color:black;
-  color: #f7f7f7
+#title:hover {
+  background-color: black;
+  color: #f7f7f7;
 }
 
-
-.titleWrap{
+.titleWrap {
   float: left;
   position: relative;
   left: 50%;
@@ -50,7 +49,7 @@ body {
   height: 50%;
   margin-top: 20%;
   margin-left: 200px;
-  text-align:center;
+  text-align: center;
   font-weight: 400;
   color: grey;
 }
@@ -58,15 +57,14 @@ body {
 .resultImage {
   width: 100%;
   margin-bottom: 15px;
-
 }
 
-.resultImage:hover{
+.resultImage:hover {
   filter: brightness(70%);
-  /* transition: 0.5s ease; */
+  transition: 0.35s ease;
 }
 
-.imageContainer{
+.imageContainer {
   max-width: 2000px;
   margin-top: 20px;
   margin-left: 275px;
@@ -77,7 +75,7 @@ body {
   text-decoration: none;
 }
 
-.detailsContainer{
+.detailsContainer {
   display: flex;
   margin-left: 275px;
   margin-right: 20px;
@@ -85,19 +83,18 @@ body {
   margin-bottom: 20px;
 }
 
-.descriptionImage{
+.descriptionImage {
   max-width: 60%;
-
 }
 
-.descriptionText{
+.descriptionText {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-.artistName{
+.artistName {
   margin-top: 20px;
   margin-bottom: 5px;
   font-weight: normal;
@@ -105,77 +102,73 @@ body {
   font-weight: 300;
 }
 
-.artistName::first-line{
+.artistName::first-line {
   font-size: 24px;
   font-weight: 400;
 }
 
-
-.artworkTitle{
-  font-family: 'Roboto Condensed', sans-serif;
+.artworkTitle {
+  font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   font-size: 32px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
-.artworkDetails{
-  font-weight:400;
-}
-
-span{
+.artworkDetails {
   font-weight: 400;
 }
 
-.artworkMedium{
-  font-weight:300;
+span {
+  font-weight: 400;
+}
+
+.artworkMedium {
+  font-weight: 300;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.artworkStyle{
+.artworkStyle {
   font-weight: 300;
 }
 
-
-button{
-  background-color: #f7f7f7; 
+button {
+  background-color: #f7f7f7;
   border: 1px solid black;
   color: black;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
-
-
+  font-family: "Roboto", sans-serif;
 }
 
-button:hover{
+button:hover {
   background-color: black;
   color: #f7f7f7;
   text-decoration: underline;
 }
 
-.returnButton{
+.returnButton {
   margin-top: 30px;
   background-color: white;
 }
 
-input{
+input {
   padding: 12px 20px;
-  font-size:11px;
+  font-size: 11px;
   border: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.source{
+.source {
   font-size: 11px;
-  text-align:center;
+  text-align: center;
   color: grey;
 }
 
-.home{
+.home {
   margin: 0;
   position: absolute;
   top: 40%;
@@ -186,21 +179,21 @@ input{
   text-align: center;
 }
 
-.homeContainer p{
+.homeContainer p {
   overflow: hidden;
   white-space: nowrap;
   font-weight: 300;
 }
 
-.homeContainer span{
+.homeContainer span {
   overflow: hidden;
   white-space: nowrap;
   font-weight: 400;
 }
 
-.homeTitle{
+.homeTitle {
   width: 130px;
-  margin:auto;
+  margin: auto;
   text-align: left;
   color: black;
   font-weight: 100;
