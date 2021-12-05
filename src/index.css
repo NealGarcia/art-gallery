@@ -4,8 +4,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   text-decoration: none;
-
-
 }
 
 #title{
@@ -32,7 +30,6 @@ body {
 
 .sideBar {
   height: 100%;
-  /* border-right: 1px solid black; */
   width: 250px;
   position: fixed;
   z-index: 1; /*element stays on top*/
@@ -87,8 +84,8 @@ body {
 .artistName{
   margin-top: 20px;
   margin-bottom: 5px;
+  font-weight: normal;
   white-space: pre-line;
-  font-weight: normal
 }
 
 .artistName::first-line{
@@ -129,8 +126,4 @@ input{
   padding: 12px 20px;
   font-size:11px;
   border: black;
-}
-
-.test{
-  white-space: pre-line;
 }
