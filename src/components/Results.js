@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
+
 function Results({ data }) {
   function imgMouseHover(event) {
     event.target.style.opacity = 0.75;
@@ -9,6 +10,10 @@ function Results({ data }) {
   function imgMouseLeave(event) {
     event.target.style.opacity = 1.0;
   }
+
+  if (!data.length ){
+    return <h2 className = "noResults"> No Results Found</h2>
+}
 
   return (
     <div>
