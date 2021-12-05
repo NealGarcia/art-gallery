@@ -17,6 +17,7 @@ function SearchBar({ handleSubmit, handleChange,}) {
           required
         />
         <br />
+        
         <button type="submit">SEARCH</button>
         <br />
         <p className = "source">Data and images are sourced from the Art Institute of Chicago API.</p>
