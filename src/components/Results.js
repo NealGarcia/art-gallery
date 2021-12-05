@@ -7,7 +7,6 @@ function Results({ data }) {
   }
 
   return (
-    <div>
       <div className="imageContainer">
         {console.log(data)}
         {data.map((data) => (
@@ -24,7 +23,6 @@ function Results({ data }) {
           </Link>
         ))}
       </div>
-    </div>
   );
 }
 
