@@ -7,22 +7,24 @@ function Results({ data }) {
   }
 
   return (
-      <div className="imageContainer">
-        {console.log(data)}
-        {data.map((data) => (
-          <Link
-            to={`/details/${data.id}`}
-            className="image"
-            style={{ textDecoration: "none" }}
-          >
-            <img
-              src={`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`}
-              alt={data.title}
-              className="resultImage"
-            ></img>
-          </Link>
-        ))}
-      </div>
+      <div>
+          <div className="imageContainer">
+          {console.log(data)}
+          {data.map((data) => (
+            <Link
+              to={`/details/${data.id}`}
+              className="image"
+              style={{ textDecoration: "none" }}
+            >
+              <img
+                src={`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`}
+                alt={data.title}
+                className="resultImage"
+              ></img>
+            </Link>
+          ))}
+        </div>
+    </div>
   );
 }
 

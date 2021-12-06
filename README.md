@@ -24,3 +24,4 @@ Click on an artwork to see more details and a larger version of the artwork imag
 - Component that renders and displays other artworks from that artist.
 - Display random results upon page loading
 - Create your own personal gallery - use can save their favorite artworks to view later. 
+- Option to choose the amount of search results.

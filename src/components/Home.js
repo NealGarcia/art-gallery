@@ -8,13 +8,9 @@ function Home({ handleSubmit, handleChange }) {
         Gallery
       </h1>
       <div className="homeContainer">
-        <p>
-          Welcome to <span>React Art Gallery.</span>
-        </p>
-        <p>
-          Use the search bar to the left to search for to start finding artworks
-          to view.{" "}
-        </p>
+        <p>Welcome to <span>React Art Gallery.</span></p>
+        <p>Use the search bar to the left to search for to start finding artworks to view. </p>
+        <p>Click on an artwork to learn more.</p>
       </div>
     </div>
   );
