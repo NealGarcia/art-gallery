@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import React from "react";
 
-function Results({ data }) {
+function Results({data}) {
   if (!data.length) {
     return <h2 className="noResults"> No Results Found</h2>;
   }
@@ -27,5 +26,4 @@ function Results({ data }) {
     </div>
   );
 }
-
 export default Results;

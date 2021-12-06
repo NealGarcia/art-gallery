@@ -31,7 +31,7 @@ body {
   height: 100%;
   width: 250px;
   position: fixed;
-  z-index: 1; /*element stays on top*/
+  /* z-index: 1; element stays on top */
   top: 0;
   left: 0;
   background-color: #f7f7f7;
