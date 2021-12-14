@@ -10,7 +10,7 @@ function App() {
   const [search, setSearch] = useState("modern");
   const history = useHistory();
 
-  function getImages(result) {
+  function getResults(result) {
     const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id&limit=30`;
     fetch(url)
       .then((response) => response.json())
@@ -21,7 +21,7 @@ function App() {
   }
 
   useEffect(() => {
-    getImages();
+    getResults();
   }, []);
 
   function handleChange(event) {
@@ -31,7 +31,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     history.push("/results");
-    getImages(search);
+    getResults(search);
   }
 
   return (
@@ -42,7 +42,6 @@ function App() {
         search={search}
       />
       {/* <Results data = {data}/> */}
-
       <Route path="/" exact component={Home} />
       <Route path="/results" exact component={() => <Results data={data} />} />
       <Route path="/details/:search" component={Details} data={data} />

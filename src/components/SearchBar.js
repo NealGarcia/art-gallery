@@ -23,6 +23,8 @@ function SearchBar({ handleSubmit, handleChange }) {
         <p className="source">
           Data and images are sourced from the Art Institute of Chicago API.
         </p>
+
+        <p className = "author">&copy; Neal Garcia, 2021 </p>
       </form>
     </div>
   );
