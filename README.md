@@ -14,6 +14,25 @@ Clink the following link to view the working application.
 - CSS
 - Third-Party data from [Art Institute of Chicago API](https://api.artic.edu/docs/#quick-start)
 
+## Wireframes:
+To get a clear idea of the apps's layout, interface, and functionality, I created low-fidelity wireframes using AdobeXD. 
+**Initial Screen Showing Results**
+![img](screens/wireframe1.png)
+**Artwork Details Screen**
+![img](screens/wireframe2.png)
+
+## User Stories:
+I created user stories to get a stronger understanding and better perspective of the project's features from the eyes of a prospective user.
+- As a user I want to be able to search for artworks with different search options.
+- As a user I want to be able to see enlarged images of art.
+- As a user I want to be able to see information about the artwork and the artist.
+- As a user I want to be able to go back to the main screen.
+- As a user I want to be able to select the number of search results.
+
+
+
+
+
 ## How to Use
 Use the search bar to search for artworks by keyword. This keyword can be an artist, an artstyle, a medium, a country of origin - the search will return all artworks whose metadata contains some mention of the keyword.
 
