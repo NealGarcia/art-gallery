@@ -81,6 +81,11 @@ body {
   display: inline-block;
 }
 
+.card-artist{
+  font-weight:200;
+  font-size: 0.8em;
+}
+
 .card img{
   width: 100%;
   margin-bottom: 15px;

@@ -7,11 +7,11 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [data, setData] = useState([]);
-  const [search, setSearch] = useState("modern");
+  const [search, setSearch] = useState("");
   const history = useHistory();
 
   function getResults(result) {
-    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id&limit=30`;
+    const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id,artist_title&limit=30`;
     fetch(url)
       .then((response) => response.json())
       .then((response) => {

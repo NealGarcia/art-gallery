@@ -30,7 +30,7 @@ function Card(item){
                         isHovered ? 
                         <div className="overlay-text">
                             <h4 className="card-title">{item.data.title}</h4>
-                            <p className="card-artist">{item.data.artist}</p>
+                            <p className="card-artist">{item.data.artist_title}</p>
                         </div>
                         : null
                     }
