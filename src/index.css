@@ -200,7 +200,7 @@ span {
   font-weight: 300;
 }
 
-button {
+button, .btn {
   background-color: #f7f7f7;
   border: 1px solid black;
   color: black;
@@ -213,7 +213,7 @@ button {
   margin-bottom:10px;
 }
 
-button:hover {
+button:hover, .btn:hover {
   background-color: black;
   color: #f7f7f7;
   text-decoration: underline;
@@ -289,4 +289,11 @@ input {
   padding: 20px;
   border: 1px solid black;
   margin-bottom: 30px;
+}
+
+.homeContainer .btn{
+  margin-top:20px;
+  width:unset;
+  background-color: #000000;
+  color:#ffff;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
@@ -9,8 +10,12 @@ function Home(props) {
       </h1>
       <div className="homeContainer">
         <p>Welcome to <span>React Art Gallery.</span></p>
-        <p>Use the search bar to the left to start finding artworks to view. </p>
+        <p>Use the search bar to start finding artworks to view. </p>
         <p>Click on an artwork to learn more.</p>
+        <Link
+              to={`/results`}
+              className="image"
+        ><div className="btn">Let's see some art!</div></Link>
       </div>
     </div>
   );
