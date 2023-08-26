@@ -9,9 +9,62 @@ function App() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const history = useHistory();
+  const searchTerms = [
+    "Modern",
+    "Picasso",
+    "Contemporary",
+    "Oil Painting",
+    "Sculpture",
+    "Impressionism",
+    "Abstract",
+    "Palette",
+    "Canvas",
+    "Watercolor",
+    "Expressionism",
+    "Palette Knife",
+    "Cubism",
+    "Easel",
+    "Fresco",
+    "Pop Art",
+    "Graffiti",
+    "Dadaism",
+    "Surrealism",
+    "Engraving",
+    "Ink",
+    "Chiaroscuro",
+    "Monet",
+    "Portraiture",
+    "Gouache",
+    "Calligraphy",
+    "Art Nouveau",
+    "Fauvism",
+    "Pointillism",
+    "Collage",
+    "Renaissance",
+    "Realism",
+    "Still Life",
+    "Bronze",
+    "Marble",
+    "Landscape",
+    "Carving",
+    "Mosaic",
+    "Mural",
+    "Pottery",
+    "Abstract Expressionism",
+    "Printmaking",
+    "Pastel",
+    "Sgraffito",
+    "Installation",
+    "Glaze",
+    "Hue",
+    "Kiln",
+    "Ceramics",
+    "Varnish",
+  ];
 
   function getResults(result) {
     const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id,artist_title&limit=30`;
+    console.log(url)
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
@@ -34,12 +87,21 @@ function App() {
     getResults(search);
   }
 
+  function randomize(){
+    console.log("Randomize!")
+    const index = Math.floor(Math.random() * searchTerms.length);
+    var randomTerm = searchTerms[index];
+    setSearch(randomTerm)
+    getResults(search);
+  }
+
   return (
     <div className="App">
       <SideBar
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         search={search}
+        randomize={randomize}
       />
       {/* <Results data = {data}/> */}
       <Route path="/" exact component={Home} />
