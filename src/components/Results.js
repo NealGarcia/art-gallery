@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Card from "./Card";
 
 function Results({data}) {
   if (!data.length) {
@@ -7,19 +8,14 @@ function Results({data}) {
 
   return (
       <div>
-          <div className="imageContainer">
-          {console.log(data)}
-          {data.map((data) => (
+          <div className="results">
+          {data.map((item) => (
             <Link
-              to={`/details/${data.id}`}
+              to={`/details/${item.id}`}
               className="image"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src={`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`}
-                alt={data.title}
-                className="resultImage"
-              ></img>
+              <Card data={item}/>
             </Link>
           ))}
         </div>

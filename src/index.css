@@ -54,22 +54,40 @@ body {
   color: grey;
 }
 
-.resultImage {
+.card{
+  width: 100%;
+}
+
+.card img{
   width: 100%;
   margin-bottom: 15px;
 }
 
-.resultImage:hover {
-  filter: brightness(70%);
-  transition: 0.35s ease;
+.card-overlay-wrapper{
+  position: relative;
 }
 
-.imageContainer {
+.card-inner {
+  position: absolute;
+  color: #fff;
+  left:0;
+  right:0;
+  height:100%;
+  width: 100%;
+  background-color: rgb(0,0,0,0.5);
+  z-index:999;
+}
+
+.hovered{
+  filter: brightness(70%); 
+}
+
+
+.results {
   max-width: 2000px;
   margin-top: 20px;
   margin-left: 275px;
   margin-right: 20px;
-  /* column-count: 4; */
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -81,19 +99,19 @@ body {
     margin-left: 1rem;
   }
 
-  .imageContainer {
+  .results {
     column-count: 3;
   }
 }
 
-@media (min-width: 1000px) {
-  .imageContainer {
+@media (min-results: 1000px) {
+  .results {
     column-count: 4;
   }
 }
 
 @media (min-width: 1400px) {
-  .imageContainer {
+  .results {
     column-count: 5;
   }
 }
