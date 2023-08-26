@@ -6,8 +6,8 @@ import { AiOutlineSearch } from 'react-icons/fa';
 function SideBar({ handleSubmit, handleChange, randomize }) {
   return (
     <div className="sideBar">
-      <Link to={"/results"} id="titleWrap">
-        <h1 id="title">
+      <Link to={"/gallery"} id="titleWrap">
+        <h1 onClick={randomize} id="title">
           React Art <br />
           Gallery
         </h1>

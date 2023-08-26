@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Home(props) {
+function Home() {
   return (
     <div className="home">
       <h1 className="homeTitle">
@@ -13,7 +13,7 @@ function Home(props) {
         <p>Use the search bar to start finding artworks to view. </p>
         <p>Click on an artwork to learn more.</p>
         <Link
-              to={`/results`}
+              to={`/gallery`}
               className="image"
         ><div className="btn">Let's see some art!</div></Link>
       </div>

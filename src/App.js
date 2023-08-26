@@ -6,9 +6,6 @@ import Home from "./components/Home";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
-  const history = useHistory();
   const searchTerms = [
     "Modern",
     "Picasso",
@@ -61,6 +58,10 @@ function App() {
     "Ceramics",
     "Varnish",
   ];
+  const randomIndex = Math.floor(Math.random() * searchTerms.length);
+  const [data, setData] = useState([]);
+  const [search, setSearch] = useState(searchTerms[randomIndex]);
+  const history = useHistory();
 
   function getResults(result) {
     const url = `https://api.artic.edu/api/v1/artworks/search?q=${search}&fields=id,title,image_id,artist_title&limit=30`;
@@ -83,7 +84,7 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    history.push("/results");
+    history.push("/gallery");
     getResults(search);
   }
 
@@ -104,8 +105,8 @@ function App() {
         randomize={randomize}
       />
       {/* <Results data = {data}/> */}
-      <Route path="/" exact component={Home} />
-      <Route path="/results" exact component={() => <Results data={data} />} />
+      <Route path="/" exact component={Home}/>
+      <Route path="/gallery" exact component={() => <Results data={data} />} />
       <Route path="/details/:search" component={Details} data={data} />
     </div>
   );
