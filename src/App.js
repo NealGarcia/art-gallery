@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import React, { useState, useEffect } from "react";
 
 function App() {
+  // Search terms that are randomized through
   const searchTerms = [
     "Modern",
     "Picasso",
@@ -46,7 +47,7 @@ function App() {
     "Carving",
     "Mosaic",
     "Mural",
-    "Pottery",
+    "Van Gogh",
     "Abstract Expressionism",
     "Printmaking",
     "Pastel",
@@ -54,7 +55,7 @@ function App() {
     "Installation",
     "Glaze",
     "Hue",
-    "Kiln",
+    "Mondrian",
     "Ceramics",
     "Varnish",
   ];

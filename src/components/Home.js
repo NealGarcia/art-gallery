@@ -5,11 +5,11 @@ function Home() {
   return (
     <div className="home">
       <h1 className="homeTitle">
-        React Art <br />
-        Gallery
+        Virtual<br />
+        Art-Vault
       </h1>
       <div className="homeContainer">
-        <p>Welcome to <span>React Art Gallery.</span></p>
+        <p>Welcome to <span>Virtual Art-Vault</span></p>
         <p>Use the search bar to start finding artworks to view. </p>
         <p>Click on an artwork to learn more.</p>
         <Link

@@ -8,8 +8,8 @@ function SideBar({ handleSubmit, handleChange, randomize }) {
     <div className="sideBar">
       <Link to={"/gallery"} id="titleWrap">
         <h1 onClick={randomize} id="title">
-          React Art <br />
-          Gallery
+          Virtual <br />
+          Art-Vault
         </h1>
       </Link>
       <form className="searchForm" onSubmit={handleSubmit}>
