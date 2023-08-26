@@ -18,16 +18,7 @@ function Card(item){
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div
-                    className="card-overlay-wrapper"
-                >
-                    {isHovered ? 
-                        <div className="card-inner">
-                            <h4 className="card-title">{item.data.title}</h4>
-                        </div>
-                       
-                    : null}
-                </div>
+                
                 <img
                     src={`https://www.artic.edu/iiif/2/${item.data.image_id}/full/843,/0/default.jpg`}
                     alt={item.title}
@@ -35,6 +26,13 @@ function Card(item){
                         "hovered"
                     : null}
                 ></img>
+                    {
+                        isHovered ? 
+                        <div className="overlay-text">
+                            <h4 className="card-title">{item.data.title}</h4>
+                        </div>
+                        : null
+                    }
             </div>
         </>
     )
