@@ -1,4 +1,4 @@
-import SearchBar from "./components/SearchBar";
+import SideBar from "./components/SideBar";
 import Results from "./components/Results";
 import { Route, useHistory } from "react-router-dom";
 import Details from "./components/Details";
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar
+      <SideBar
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         search={search}

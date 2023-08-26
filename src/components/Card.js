@@ -12,7 +12,7 @@ function Card(item){
 
     return(
         <>
-            {console.log(item.data)}
+            {console.log(item)}
             <div
                 className="card"
                 onMouseEnter={handleMouseEnter}
@@ -30,6 +30,7 @@ function Card(item){
                         isHovered ? 
                         <div className="overlay-text">
                             <h4 className="card-title">{item.data.title}</h4>
+                            <p className="card-artist">{item.data.artist}</p>
                         </div>
                         : null
                     }

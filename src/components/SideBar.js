@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { AiOutlineSearch } from 'react-icons/fa';
 
-function SearchBar({ handleSubmit, handleChange }) {
+
+
+function SideBar({ handleSubmit, handleChange }) {
   return (
     <div className="sideBar">
       <Link to={"/results"} id="titleWrap">
@@ -10,24 +13,26 @@ function SearchBar({ handleSubmit, handleChange }) {
         </h1>
       </Link>
       <form className="searchForm" onSubmit={handleSubmit}>
+        <div className = "searchContainer">
         <input
           placeholder="Keyword ex: Picasso, Modern"
           type="text"
           onChange={handleChange}
           required
         />
-        <br />
+        </div>
 
-        <button type="submit">SEARCH</button>
-        <br />
+        <button className="search" type="submit">SEARCH</button>
+        <button className="random">RANDOM</button>
+        <button className="saved">SAVED</button>
         <p className="source">
           Data and images are sourced from the Art Institute of Chicago API.
         </p>
 
-        <p className = "author">&copy; Neal Garcia, 2021 </p>
+        <a href="https://www.nealgarcia.com" target="_blank" className = "author">&copy; Neal Garcia, 2023 </a>
       </form>
     </div>
   );
 }
 
-export default SearchBar;
+export default SideBar;
